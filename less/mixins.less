@@ -1,1 +1,36 @@
 // Mixins Here
+.mixlinks(){
+    text-decoration: none;
+    color: @text;
+    margin: 20px;
+}
+.para(){
+    font-weight: bold;
+}
+.mobilespace(){
+    margin-left: 5%;
+}
+// Parametric 
+
+.button(@bg, @padding, @color, @radius, @width, @font ){
+
+    background-color: @bg;
+    padding: @padding;
+    color: @color;
+    border-radius: @radius;
+    width: @width;
+    font-size: @font;
+    text-align: center;
+   
+    &:hover{
+        background-color: lighten(@bg, 5%);
+        color: darken(@color, 5%);
+        
+    }
+}
+
+.clearlink(){
+    text-decoration: none;
+    color: white;
+    
+}
